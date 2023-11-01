@@ -1,6 +1,6 @@
 # sortviz
 
-A Tkinter GUI program that visualizes sorting algorithms.
+A Tkinter GUI pacakge that visualizes sorting algorithms.
 
 
 ## Usage
