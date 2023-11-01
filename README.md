@@ -5,6 +5,8 @@ A GUI program that visualizes sorting algorithms.
 
 ## Usage
 
+This is an example of an implementation of the bubble sort algorithm.
+
 ```python
 import src.sort_alg_visual as sort
 
@@ -23,7 +25,24 @@ def bubble_sort(array):
     return array
 
 
-root = sort.base.MainWindow()
+root = sort.MainWindow()
 root.start(bubble_sort, [9, 8, 7, 6, 5, 4, 3, 2, 1])
 root.mainloop()
 ```
+
+```python
+import src.sort_alg_visual as sort``` - Importing the package.
+
+```python
+def bubble_sort(array): [...]``` - The algorithm function - it takes an array
+as a parameter and returns a sorted version of it.
+
+```python
+root = sort.MainWindow()
+root.start(bubble_sort, [9, 8, 7, 6, 5, 4, 3, 2, 1])
+root.mainloop()``` - root is an object of the class sort.MainWindow(), which is
+a subclass of tkinter.Tk(). To start the event loop, you will need to run
+mainloop at the end. The start method takes an algorithm function and an
+unsorted array as parameters. Once you run it, the previously opened window
+will visualize the sorting process. **It is important to call the update method
+after each iteration to update the window.**
