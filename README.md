@@ -51,4 +51,4 @@ a subclass of tkinter.Tk(). To start the event loop, you will need to run
 mainloop at the end. The start method takes an algorithm function and an
 unsorted array as parameters. Once you run it, the previously opened window
 will visualize the sorting process. **It is important to call the update method
-after each iteration to update the window.**
+in the algorithm function after each iteration to update the window.**
