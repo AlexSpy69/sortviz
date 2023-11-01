@@ -1,6 +1,6 @@
 # sort-alg-visual
 
-A GUI program that visualizes sorting algorithms.
+A Tkinter GUI program that visualizes sorting algorithms.
 
 
 ## Usage
