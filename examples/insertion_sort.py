@@ -13,6 +13,6 @@ def insertion_sort(array):
     return array
 
 
-root = sort.base.MainWindow()
+root = sort.MainWindow()
 root.start(insertion_sort, [9, 8, 7, 6, 5, 4, 3, 2, 1])
 root.mainloop()
