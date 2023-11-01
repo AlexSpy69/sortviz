@@ -1,4 +1,4 @@
-# sort-alg-visual
+# sortviz
 
 A Tkinter GUI program that visualizes sorting algorithms.
 
@@ -8,7 +8,7 @@ A Tkinter GUI program that visualizes sorting algorithms.
 This is an example of an implementation of the bubble sort algorithm.
 
 ```python
-import src.sort_alg_visual as sort
+import src.sortviz as sort
 
 def bubble_sort(array):
     n = len(array)
@@ -31,7 +31,7 @@ root.mainloop()
 ```
 
 ```python
-import src.sort_alg_visual as sort
+import src.sortviz as sort
 ```
 Importing the package.
 

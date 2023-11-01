@@ -1,4 +1,4 @@
-import src.sort_alg_visual as sort
+import src.sortviz as sort
 
 def insertion_sort(array):
     for i in range(1, len(array)):

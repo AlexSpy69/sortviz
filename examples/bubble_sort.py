@@ -1,4 +1,4 @@
-import src.sort_alg_visual as sort
+import src.sortviz as sort
 
 def bubble_sort(array):
     n = len(array)
