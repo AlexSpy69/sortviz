@@ -32,6 +32,7 @@ class MainWindow(tk.Tk):
         self.sleeptime = 0
 
     def start(self, alg, sequence: list):
+        self.iter_count = 0
         def proc():
             self.grid.set_sequence(sequence)
             time.sleep(1)
