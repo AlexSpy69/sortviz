@@ -1,4 +1,4 @@
-import src.sortviz as sort
+import sortviz
 
 def selection_sort(array):
     size = len(array)
@@ -12,7 +12,7 @@ def selection_sort(array):
 
     return array
 
-root = sort.MainWindow()
+root = sortviz.MainWindow()
 root.start(selection_sort, [9, 8, 7, 6, 5, 4, 3, 2, 1])
 root.mainloop()
 

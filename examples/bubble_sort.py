@@ -1,4 +1,4 @@
-import src.sortviz as sort
+import sortviz
 
 def bubble_sort(array):
     n = len(array)
@@ -15,7 +15,6 @@ def bubble_sort(array):
     return array
 
 
-root = sort.MainWindow()
+root = sortviz.MainWindow()
 root.start(bubble_sort, [9, 8, 7, 6, 5, 4, 3, 2, 1])
 root.mainloop()
-

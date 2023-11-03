@@ -1,4 +1,4 @@
-import src.sortviz as sort
+import sortviz
 
 def insertion_sort(array):
     for i in range(1, len(array)):
@@ -13,6 +13,6 @@ def insertion_sort(array):
     return array
 
 
-root = sort.MainWindow()
+root = sortviz.MainWindow()
 root.start(insertion_sort, [9, 8, 7, 6, 5, 4, 3, 2, 1])
 root.mainloop()
