@@ -1,1 +1,1 @@
-from src.sortviz.base import *
+from sortviz.base import *
