@@ -2,7 +2,7 @@ import tkinter as tk
 import tkinter.ttk as ttk
 
 import time, threading
-import util
+import sortviz.util
 
 class Grid(tk.Frame):
     def __init__(self):
