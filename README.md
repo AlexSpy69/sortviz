@@ -2,6 +2,13 @@
 
 A Tkinter GUI pacakge that visualizes sorting algorithms.
 
+## Installation
+
+Open the main folder in your terminal and install the package using pip.
+
+```bash
+pip install .
+```
 
 ## Usage
 
