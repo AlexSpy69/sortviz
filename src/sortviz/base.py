@@ -2,6 +2,7 @@ import tkinter as tk
 import tkinter.ttk as ttk
 
 import time, threading
+import util
 
 class Grid(tk.Frame):
     def __init__(self):
@@ -31,12 +32,21 @@ class MainWindow(tk.Tk):
         self.iter_count = 0
         self.sleeptime = 0
 
-    def start(self, alg, sequence: list):
+    def start(self, alg, sequence: list, single_iter=False):
         self.iter_count = 0
-        def proc():
-            self.grid.set_sequence(sequence)
-            time.sleep(1)
-            alg(sequence)
+        if not single_iter:
+            def proc():
+                self.grid.set_sequence(sequence)
+                time.sleep(1)
+                alg(sequence)
+        else:
+            def proc():
+                self.grid.set_sequence(sequence)
+                time.sleep(1)
+                while not util.is_sorted(sequence):
+                    alg(sequence)
+                    self.update(sequence)
+                
         threading.Thread(target=proc).start()
 
     def update(self, sequence: list):
