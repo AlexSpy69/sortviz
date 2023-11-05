@@ -1,7 +1,7 @@
 import sortviz
 
-def bubble_sort(array):
-    for j in range(len(array) - i - 1):
+def bubble_sort(array, n, i):
+    for j in range(n - i - 1):
         if array[j] > array[j + 1]:
             array[j], array[j + 1] = array[j + 1], array[j]
 

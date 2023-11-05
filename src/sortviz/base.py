@@ -2,7 +2,7 @@ import tkinter as tk
 import tkinter.ttk as ttk
 
 import time, threading
-import sortviz.util
+import sortviz.util as util
 
 class Grid(tk.Frame):
     def __init__(self):
@@ -44,7 +44,7 @@ class MainWindow(tk.Tk):
                 self.grid.set_sequence(sequence)
                 time.sleep(1)
                 while not util.is_sorted(sequence):
-                    alg(sequence)
+                    alg(sequence, len(sequence), self.iter_count)
                     self.update(sequence)
                 
         threading.Thread(target=proc).start()
