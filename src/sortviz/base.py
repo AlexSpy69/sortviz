@@ -16,16 +16,17 @@ class Grid(tk.Frame):
         for i in range(rows):
             for j in range(columns):
                 if sequence[j] <= i:
-                    tk.Frame(bg=self.colors[1], width=50,
-                             height=50).grid(row=rows-i, column=j, sticky="nwes")
+                    tk.Frame(bg=self.colors[1], width=500/columns,
+                             height=500/rows).grid(row=rows-i, column=j, sticky="nwes")
                 else:
-                    tk.Frame(bg=self.colors[0], width=50,
-                             height=50).grid(row=rows-i, column=j, sticky="nwes")
+                    tk.Frame(bg=self.colors[0], width=500/columns,
+                             height=500/rows).grid(row=rows-i, column=j, sticky="nwes")
 
 class MainWindow(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
         self.title("Sorting Algorithm Visualizer")
+        self.geometry("500x500")
         self.grid = Grid()
         self.grid.grid(sticky="nwes")
         
