@@ -55,7 +55,7 @@ root = sortviz.MainWindow()
 root.start(bubble_sort, [9, 8, 7, 6, 5, 4, 3, 2, 1])
 root.mainloop()
 ```
-root is an object of the class sortviz.MainWindow(), which is
+root is an instance of the class sortviz.MainWindow(), which is
 a subclass of tkinter.Tk(). To start the event loop, you will need to run
 mainloop at the end. The start method takes an algorithm function and an
 unsorted array as parameters. Once you run it, the previously opened window
